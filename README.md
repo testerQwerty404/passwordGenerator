@@ -1,2 +1,3 @@
 # passwordGenerator
-The application written in javascript that generates random passwords
+The application generates random passwords
+(HTML / JAVASCRIPT)
