@@ -1,0 +1,163 @@
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>PASSWORD TESTER</title>
+    <meta name="author" content="Leszek Onak">
+    <meta name="version" content="1.0" />
+    <script src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="numbers_to_words.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="start()">
+    <div id="controls">
+        </div>
+        <div id="right">
+        </div>
+    </div>
+    <div id="container">
+        <div id="header">
+         
+        </div>
+            <div id = "content">
+
+<div id="result">Wybierz, no! Tam...</div>
+
+<br />
+<br />
+
+
+
+<input type="text" id="size" size="5" value="6"> długość hasła
+
+<br />
+
+<br />
+<br />
+
+
+
+
+
+<select id="firstLetter" name="options">
+      <option value="none" selected>losowy</option>
+  <option value="latin" >abcdefgij</option>
+  <option value="latinB">ABCDEFGHIJ</option>
+  <option value="pl">ąęćłńóżź</option>
+  <option value="plB">ĄĘĆŁŃÓŻŹ</option>
+  <option value="digit">123456789</option>
+  <option value="dia">&%*()+=-[]\/{}</option>
+    <option value="space">[spacja]</option>
+
+</select> pierwszy znak
+
+
+<br />
+
+<br />
+<br />
+
+
+<input type="text" id="latinNum" size="1" value="1"> 
+
+<select id="latin" name="options">
+  <option value="0">nic</option>
+  <option value="1" selected>wszystko</option>
+  <option value="2">liczba</option>
+</select> 
+abcdefgij
+
+
+
+<br />
+<br />
+<input type="text" id="latinBNum" size="1" value="1"> 
+
+<select id="latinB" name="options">
+  <option value="0">nic</option>
+  <option value="1" selected>wszystko</option>
+  <option value="2">liczba</option>
+</select> ABCDEFGHIJ
+
+
+
+<br />
+<br />
+<input type="text" id="plNum" size="1" value="1"> 
+
+<select id="pl" name="options">
+  <option value="0" selected>nic</option>
+  <option value="1">wszystko</option>
+  <option value="2">liczba</option>
+</select> ąęćłńóżź
+
+
+
+
+
+<br />
+<br />
+<input type="text" id="plBNum" size="1" value="1"> 
+
+<select id="plB" name="options">
+  <option value="0" selected>nic</option>
+  <option value="1">wszystko</option>
+  <option value="2">liczba</option>
+</select> ĄĘĆŁŃÓŻŹ
+
+
+<br />
+<br />
+<input type="text" id="digitNum" size="1" value="1"> 
+
+<select id="digit" name="options">
+  <option value="0">nic</option>
+  <option value="1" selected>wszystko</option>
+  <option value="2">liczba</option>
+</select> 123456789
+
+
+
+<br />
+<br />
+
+<input type="text" id="diaNum" size="1" value="1"> 
+
+<select id="dia" name="options">
+  <option value="0" selected>nic</option>
+  <option value="1">wszystko</option>
+  <option value="2">liczba</option>
+</select> &%*()+=-[]\/{}
+
+
+
+<br />
+<br />
+
+
+<input type="text" id="spaceNum" size="1" value="1"> 
+
+<select id="space" name="options">
+  <option value="0" selected>nic</option>
+  <option value="1">wszystko</option>
+  <option value="2">liczba</option>
+</select> [spacja]
+
+
+
+<br />
+<br />
+
+
+
+
+<button onclick="generate()">Utwórz </button>
+
+
+            </div>
+ 
+    </div>
+</body>
+
+</html>
